@@ -1,0 +1,2 @@
+Final thoughts
+    that went well even though the project only required me to use html only I managed to google some extra syntax and make the website nicer. but not professional enough. gonna keep coding till I make nice websites. 
