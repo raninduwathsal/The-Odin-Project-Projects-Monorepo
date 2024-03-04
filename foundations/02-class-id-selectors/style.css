@@ -2,3 +2,11 @@
     background-color:pink;
     font-family: Verdana, DejaVu Sans, sans-serif;
  }
+ 
+ #second{
+   color: blue;
+   font-size: 36px;
+ }
+ .odd.sub{
+   font-size: 24px;
+ }
