@@ -5,11 +5,11 @@ you'll learn about it later. */
 body {
   margin: 0;
   background: #eee;
-  font-family: Besley, serif;
+  font-family: sans-serif;
 }
 
 .header {
-  background: white;
+  background: rgb(0, 20, 63);
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
@@ -18,45 +18,36 @@ body {
 }
 
 .profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
   width: 48px;
   height: 48px;
   margin-right: 3px;
 }
 
 .logo {
-  color: rebeccapurple;
+  color: white;
   font-size: 32px;
   font-weight: 900;
-  font-style: italic;
-}
-
-button {
-  border: none;
-  border-radius: 8px;
-  background: rebeccapurple;
-  color: white;
-  padding: 8px 24px;
+  font-style: bold;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
-  color: rebeccapurple;
+  color: lightgray;
 }
 
 ul {
   list-style-type: none;
+  margin-left: 10000000px;
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   gap: 16px;
 }
 
 .left ,.right {
   display: flex;
-  align-items: center;
+  align-items:center;
   gap: 16px;
   margin: 12px;
+} 
