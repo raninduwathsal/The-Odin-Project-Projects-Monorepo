@@ -26,3 +26,26 @@ function playerSelection() {
     let choice = prompt(" please enter rock, paper or scissors");
     playChoice = choice.toLowerCase();
 }
+
+function playFive() {
+    
+    for (counter = 0; counter <= 5; counter++){
+      if (counter < 5) {
+        playerSelection();  
+        getComputerChoice();
+        playGame();
+        
+        score();
+      } else if (counter = 5) {
+        
+        if (computerScore < playerScore) {
+          console.log("Player wins !");
+        } else 
+          console.log("Computer Wins");
+      }
+    
+    // console.log(counter);
+  
+    } 
+  } 
+  
