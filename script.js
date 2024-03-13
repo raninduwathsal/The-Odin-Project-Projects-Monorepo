@@ -33,14 +33,15 @@ function playFive() {
       if (counter < 5) {
         playerSelection = playerSel();  
         computerSelection = getComputerChoice();
+        //logic handles game logic and outputs the winner
         console.log(logic(playerSelection, computerSelection));
-
-      } else if (counter = 5) {
-        
-        if (computerScore < playerScore) {
-          console.log("Player wins !");
-        } else 
-          console.log("Computer Wins");
+      } 
+      else if (counter = 5) {
+        //This outputs the final result at the end of round five
+            if (computerScore < playerScore) {
+            console.log("Player wins !");
+            } else 
+            console.log("Computer Wins");
       }      
     } 
   } 
