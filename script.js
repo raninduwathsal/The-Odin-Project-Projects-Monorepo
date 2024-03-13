@@ -41,14 +41,11 @@ function playFive() {
           console.log("Player wins !");
         } else 
           console.log("Computer Wins");
-      }
-    
-    // console.log(counter);
-  
+      }      
     } 
   } 
   function logic(playerSelection, computerSelection) {
-    // your code here!
+
     if (playerSelection === computerSelection) {
       return "Its a draw 🤝";
     }
