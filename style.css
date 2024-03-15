@@ -75,3 +75,10 @@ button:hover {
     align-items: center;
     justify-content: space-around;
 }
+a{
+    margin-left: -35px;
+    margin-top: -35px;
+}
+a:hover{
+    scale: 1.2;
+}
