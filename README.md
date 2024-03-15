@@ -1,0 +1,1 @@
+An interactive web app that allows users to generate artwork in a pixelated canvas with a resoulution of users choice.
