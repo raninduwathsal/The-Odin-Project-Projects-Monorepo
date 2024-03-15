@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
     
+    //bug fix backspaceButton not working
+    
+    const backspaceButton = document.querySelector('.backspace');
+
+    // Add event listener to the backspace button
+    backspaceButton.addEventListener('click', function() {
+        inputBackspace();
+         // Call the inputBackspace() function when the button is clicked
+    });
+    
 
     function updateDisplay() {
         const display = document.getElementById('display');
