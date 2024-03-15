@@ -44,11 +44,12 @@ button:hover {
 }
 
 .clear, .backspace, .operator, .equals {
-    background-color: #ff9800;
+    background-color: #52c3ff;
+
 }
 
 .clear:hover, .backspace:hover, .operator:hover, .equals:hover {
-    background-color: #f57c00;
+    background-color: #10618d;
 }
 
 .zero {
@@ -73,4 +74,3 @@ button:hover {
     align-items: center;
     justify-content: space-around;
 }
-    
