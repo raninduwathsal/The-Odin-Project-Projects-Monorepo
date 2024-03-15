@@ -1,17 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const container = document.getElementById('container');
+    const gridContainer = document.getElementById('gridContainer');
     const generateBtn = document.getElementById('generateBtn');
 
     function createGrid(size) {
-        container.innerHTML = '';
-        container.style.width = `${size * 20}px`;
-        container.style.height = `${size * 20}px`;
+        gridContainer.innerHTML = '';
+        const squareSize = 20; // Size of each square
+        gridContainer.style.width = `${size * squareSize}px`;
+        gridContainer.style.height = `${size * squareSize}px`;
+        // Set grid-template-columns and grid-template-rows properties
+        gridContainer.style.setProperty('grid-template-columns', `repeat(${size}, 20px)`);
+        gridContainer.style.setProperty('grid-template-rows', `repeat(${size}, 20px)`);
+
 
         for (let i = 0; i < size * size; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
-            container.appendChild(square);
+            square.style.width = `${squareSize}px`;
+            square.style.height = `${squareSize}px`;
+            square.addEventListener('mouseover', darkenSquare);
+            gridContainer.appendChild(square);
         }
+    }
+
+    function darkenSquare(event) {
+        let opacity = parseFloat(event.target.style.backgroundColor || 0);
+        opacity += 1; // Increase opacity by 100% on each interaction
+        event.target.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
     }
 
     generateBtn.addEventListener('click', function() {
