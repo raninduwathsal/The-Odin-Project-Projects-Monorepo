@@ -30,3 +30,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.buttonHoldChild{
+    padding: 25px;
+    padding-left: 0;
+}
+a{
+    color: green;
+    
+}
+img{
+    width: 25vw;
+    height: auto;
+    position: fixed;
+    top: 25vh;
+    left:7vw;
+    background-color: rgba(0, 0, 0, 0.7);
+}
